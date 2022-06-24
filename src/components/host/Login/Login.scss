@@ -1,0 +1,33 @@
+.ant-container {
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    will-change: transform;
+}
+
+.th-midbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 3rem;
+    .h1 {
+        font-size: 50px;
+        margin-bottom: 0;
+        font-weight: 800;
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    .logo-tagline {
+        font-size: 22px;
+        vertical-align: middle;
+    }
+
+    .th-card-wrapper {
+        width: 315px;
+    }
+}

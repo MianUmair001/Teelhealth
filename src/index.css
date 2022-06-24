@@ -1,0 +1,35 @@
+/** Global Styles **/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    color: #566373;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #566373;
+}
+#root{
+    height: 100%;
+}
+.th-card{
+    border-color: #EBF2FF;
+    border-width: 2px;
+    border-radius: 10px;
+}
+.th-form input{
+    border-bottom: 4px solid #B5BDCB !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none !important;
+    padding: 5px 0;
+}
+.w-100{
+    width: 100%;
+}
+.ant-btn{
+    height: 50px;
+    border-radius: 10px;
+}
+.ant-btn-default{
+    border-color: #B5BDCB;
+    box-shadow: none;
+}
