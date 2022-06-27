@@ -1,47 +1,87 @@
 /** Global Styles **/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-body{
+
+body {
     font-family: 'Inter', sans-serif;
     color: #566373;
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #566373;
 }
-#root{
+
+#root {
     height: 100%;
 }
-.th-card{
+
+.th-card {
     border-color: #EBF2FF;
     border-width: 2px;
     border-radius: 10px;
 }
-.th-form input{
+
+.th-form input {
     border-bottom: 4px solid #B5BDCB !important;
     border: 0;
     border-radius: 0;
     box-shadow: none !important;
     padding: 5px 0;
 }
-.th-form .ant-input.ant-input-status-error{
+
+.th-form .ant-input.ant-input-status-error {
     border-color: #E05A5A !important;
 }
-.w-100{
+
+.w-100 {
     width: 100%;
 }
-.ant-btn{
+
+.ant-btn {
     height: 50px;
     border-radius: 10px;
 }
-.ant-btn-default{
+
+.ant-btn-default {
     border-color: #B5BDCB;
     box-shadow: none;
 }
+
 input:-webkit-autofill,
-  input:-webkit-autofill:focus {
+input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
-  }
-  .ant-modal-mask{
+}
+
+.ant-modal-mask {
     background-color: rgb(0 0 0 / 13%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-  }
+}
+
+.th-modal .ant-modal-header {
+    border: none;
+    padding: 2rem 0 0;
+    background-color: transparent;
+}
+
+.th-modal .ant-modal-header .ant-modal-title {
+    color: #626873;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 0px;
+}
+
+.th-modal .ant-modal-content {
+    background: #F7FAFF 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+}
+.th-modal .ant-modal-body{
+    text-align: center;
+}
+.th-modal .ant-modal-body p{
+    color: #6D7380;
+}

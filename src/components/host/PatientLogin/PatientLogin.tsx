@@ -2,6 +2,7 @@ import { Row, Col, Card, Form, Select, Input, Button, message } from "antd";
 import './PatientLogin.scss';
 import Logo from '../../../assets/images/persivia-logo.png';
 import LoginGraphic from '../../../assets/images/patient-login.svg';
+import Permission1 from '../../../assets/images/permission-1.png';
 import Modals from "../../common/Modals/Modals";
 import { useState } from "react";
 function PatientLogin() {
@@ -14,11 +15,11 @@ function PatientLogin() {
     console.log('Failed:', errorInfo);
   };
   const { Option } = Select;
-  const ModalJSX = (
+  const modalJSX = (
     <>
-      <h1>Iam </h1>
-      <h1>Iam </h1>
-      <h1>Iam </h1>
+      <p>Telehealth needs access to your camera and microphone so that other participants can see and hear you. Telehealth will ask you to confirm this decision on each browser and device you use</p>
+      <p>When message prompt click allow button. In case of no such message pop up on your browser <a href="">Read More.</a></p>
+      <img src={Permission1} style={{maxWidth: "100%", marginTop: "20px"}} />
     </>
 
   )
@@ -34,7 +35,7 @@ function PatientLogin() {
               <p>Please enter your name, select your language preference and click on submit</p>
               <Card className="th-card">
                 <Form onFinish={onFinish} onFinishFailed={onFinishFailed} layout="vertical" autoComplete="off" className="th-form">
-                  <span className="general-error" style={{ color: "#E05A5A", fontWeight: "600", marginBottom: "10px", display: "none" }}>Login unsuccessful. Invalid username or password.</span>
+                  <span className="general-error" style={{ color: "#E05A5A", fontWeight: "600", marginBottom: "10px", display: "block" }}>Login unsuccessful. Invalid username or password.</span>
                   <Form.Item label="Full Name" name="name" rules={[{ required: true, message: 'Please input your username!' }]}>
                     <Input placeholder="John Doe" />
                   </Form.Item>
@@ -56,7 +57,7 @@ function PatientLogin() {
           </Col>
         </Row>
       </div>
-      <Modals setModal1Visible={setModal1Visible} modal1Visible={modal1Visible} title="Muhammad Umair" ModalJSX={ModalJSX} />
+      <Modals className="th-modal warning-modal" setModal1Visible={setModal1Visible} modal1Visible={modal1Visible} title="Allow Telehealth to use your camera & microphone" modalJSX={modalJSX} width={1000} />
     </>
   );
 }

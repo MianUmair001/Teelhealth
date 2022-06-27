@@ -1,27 +1,24 @@
-import { Button, Modal } from 'antd';
-import React, { ComponentProps, useState } from 'react';
+import { Modal } from 'antd';
+import React, { ComponentProps } from 'react';
 
 const Modals = ({
   modal1Visible, setModal1Visible,
-  title,ModalJSX
+  title, modalJSX, width, className
 }: ComponentProps<any>) => {
 
   return (
     <>
-      {/* <Button type="primary" onClick={() => setModal1Visible(true)}>
-        Display a modal dialog at 20px to Top
-      </Button> */}
       <Modal
+        className={className}
         title={title}
         style={{ top: 20 }}
         visible={modal1Visible}
-        onOk={() => setModal1Visible(false)}
         onCancel={() => setModal1Visible(false)}
-      >
-        {ModalJSX}
-        <p>some contents...</p>
-        <p>some contents...</p>
-        <p>some contents...</p>
+        centered
+        footer={null}
+        width={width}
+        >
+        {modalJSX}
       </Modal>
     </>
   );
