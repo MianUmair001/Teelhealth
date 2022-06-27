@@ -2,8 +2,10 @@ import { Row, Col, Card, Form, Select, Input, Button, message } from "antd";
 import './PatientLogin.scss';
 import Logo from '../../../assets/images/persivia-logo.png';
 import LoginGraphic from '../../../assets/images/patient-login.svg';
+import Modals from "../../common/Modals/Modals";
+import { useState } from "react";
 function PatientLogin() {
-
+  const [modal1Visible, setModal1Visible] = useState(false);
   const onFinish = (values: any) => {
     console.log('Success:', values);
   };
@@ -12,6 +14,14 @@ function PatientLogin() {
     console.log('Failed:', errorInfo);
   };
   const { Option } = Select;
+  const ModalJSX = (
+    <>
+      <h1>Iam </h1>
+      <h1>Iam </h1>
+      <h1>Iam </h1>
+    </>
+
+  )
   return (
     <>
       <div className="ant-container">
@@ -34,9 +44,9 @@ function PatientLogin() {
                       <Option value="spanish"><i className="flag es"></i> Spanish</Option>
                     </Select>
                   </Form.Item>
-                    <Form.Item>
-                      <Button htmlType="submit" className="w-100">Submit</Button>
-                    </Form.Item>
+                  <Form.Item>
+                    <Button htmlType="submit" className="w-100" onClick={() => setModal1Visible(true)}>Submit</Button>
+                  </Form.Item>
                 </Form>
               </Card>
             </div>
@@ -46,6 +56,7 @@ function PatientLogin() {
           </Col>
         </Row>
       </div>
+      <Modals setModal1Visible={setModal1Visible} modal1Visible={modal1Visible} title="Muhammad Umair" ModalJSX={ModalJSX} />
     </>
   );
 }

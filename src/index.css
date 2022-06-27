@@ -40,3 +40,8 @@ input:-webkit-autofill,
   input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
   }
+  .ant-modal-mask{
+    background-color: rgb(0 0 0 / 13%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
