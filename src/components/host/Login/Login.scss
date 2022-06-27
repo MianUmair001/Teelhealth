@@ -12,6 +12,7 @@
     transform: translateY(-50%);
     width: 100%;
     padding: 0 3rem;
+
     .h1 {
         font-size: 50px;
         margin-bottom: 0;
@@ -29,5 +30,21 @@
 
     .th-card-wrapper {
         width: 315px;
+
+        .ant-form {
+            .ant-input-password {
+
+                border: 0;
+                padding: 0;
+                box-shadow: none;
+
+                .ant-input-suffix {
+
+                    position: absolute;
+                    right: 0;
+
+                }
+            }
+        }
     }
 }
