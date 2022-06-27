@@ -22,6 +22,9 @@ h1, h2, h3, h4, h5, h6{
     box-shadow: none !important;
     padding: 5px 0;
 }
+.th-form .ant-input.ant-input-status-error{
+    border-color: #E05A5A !important;
+}
 .w-100{
     width: 100%;
 }
@@ -33,3 +36,7 @@ h1, h2, h3, h4, h5, h6{
     border-color: #B5BDCB;
     box-shadow: none;
 }
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }

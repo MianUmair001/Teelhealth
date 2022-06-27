@@ -24,17 +24,18 @@ function Login() {
               <p>Sign in to your account</p>
               <Card className="th-card">
                 <Form onFinish={onFinish} onFinishFailed={onFinishFailed} layout="vertical" autoComplete="off" className="th-form">
-                  <span className="general-error" style={{color: "#E05A5A", fontWeight: "600", marginBottom: "10px", display: "block"}}>Login unsuccessful. Invalid username or password.</span>
-                  <Form.Item rules={[
-                    {
-                      type: 'email',
-                      message: 'The input is not valid E-mail!',
-                    },
-                    {
-                      required: true,
-                      message: 'Please input your E-mail!',
-                    },
-                  ]} name="username" label="Username">
+                  <span className="general-error" style={{ color: "#E05A5A", fontWeight: "600", marginBottom: "10px", display: "block" }}>Login unsuccessful. Invalid username or password.</span>
+                  <Form.Item validateStatus="error"
+                    rules={[
+                      {
+                        type: 'email',
+                        message: 'The input is not valid E-mail!',
+                      },
+                      {
+                        required: true,
+                        message: 'Please input your E-mail!',
+                      },
+                    ]} name="username" label="Username">
                     <Input placeholder="John Doe" />
                   </Form.Item>
                   <Form.Item rules={[
