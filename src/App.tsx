@@ -5,8 +5,8 @@ import PatientLogin from "./components/host/PatientLogin/PatientLogin";
 import { Layout } from "antd";
 function App() {
   return (
-        // <Login />
-        <PatientLogin />
+        <Login />
+        // <PatientLogin />
   );
 }
 

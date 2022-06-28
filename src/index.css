@@ -85,3 +85,16 @@ input:-webkit-autofill:focus {
 .th-modal .ant-modal-body p{
     color: #6D7380;
 }
+.ant-notification,
+.th-alert {
+    width: 100%;
+}
+.th-alert .ant-notification-notice-message{
+    font-size: 14px;
+    text-align: center;
+    color: #6B5B5B;
+    font-weight: 500;
+}
+.th-alert.warning{
+    background-color: #FFF7F7;
+}
