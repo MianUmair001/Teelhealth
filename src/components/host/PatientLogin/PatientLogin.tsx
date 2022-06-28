@@ -5,9 +5,8 @@ import LoginGraphic from '../../../assets/images/patient-login.svg';
 import Permission1 from '../../../assets/images/permission-1.png';
 import Modals from "../../common/Modals/Modals";
 import type { NotificationPlacement } from 'antd/lib/notification';
-import {
-  BorderTopOutlined
-} from '@ant-design/icons';
+import "../../../css/mixin.scss";
+
 import { useState } from "react";
 function PatientLogin() {
   const [modal1Visible, setModal1Visible] = useState(false);
@@ -67,7 +66,7 @@ function PatientLogin() {
             </div>
           </Col>
           <Col md={12}>
-            <img src={LoginGraphic} style={{ maxWidth: "100%" }} />
+            <img className="login-graphic" src={LoginGraphic} style={{ maxWidth: "100%" }} />
           </Col>
         </Row>
       </div>

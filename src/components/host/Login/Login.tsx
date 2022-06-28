@@ -57,7 +57,7 @@ function Login() {
 
           </Col>
           <Col md={12}>
-            <img src={LoginGraphic} style={{ maxWidth: "100%" }} />
+            <img className="login-graphic" src={LoginGraphic} style={{ maxWidth: "100%" }} />
           </Col>
         </Row>
       </div>
